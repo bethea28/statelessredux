@@ -1,6 +1,7 @@
 import React from 'react'
 import addArtist from '../actions'
 import handle from '../actions'
+import Form from './formContainer'
 
 
 const Artist = ({text, cards ,addArtist,handle})=>(
@@ -8,8 +9,9 @@ const Artist = ({text, cards ,addArtist,handle})=>(
 <div>
 {text}
   <button onClick={addArtist}>Artist</button>
-	<input onChange={handle}/>
+  <input onChange={handle}/>
 
+  <Form/>
 </div>
 
 )

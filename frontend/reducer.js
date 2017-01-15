@@ -9,7 +9,7 @@ const _defaultState = {
 const reducer = (oldState = _defaultState, action) => {
   switch(action.type) {
     case "handle":
-      return Object.assign({},oldState, {cards: store.getState().cards += action.data})
+      return Object.assign({},oldState, {cards: store.getState().cards += action._defaultState})
     case 'addArtist':
       return Object.assign({},oldState, {text: store.getState().text += action.text})
 
